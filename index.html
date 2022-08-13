@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--hiba eseten megjeleno hibabuborekok-->
+
+    <div id="nametext">
+        <p>Hibás felhasználó név!<br>- hossz: 8-30 karakter <br>- betűvel kezdődjön
+        <br> - tartalmazhat: kis és nagy angol betűk, számok, _</p> </div>
+    <div id="passtext">
+        <p>Hibás jelszó! <br>- legalább 8 karakter<br>- betűvel kezdődjön
+        <br> - kis és nagy angol betűk(legalább 1)<br> - számok(legalább 1) <br>- metakarakter(legalább 1)</p>
+    </div>
+    <div class="arrow" id="left1"></div>
+    <div class="arrow" id="left2"></div>
+
+    <!--belepteto felulet-->
+    <div id="container">
+        <div id="card">
+            <div id="urlap">
+                <section>
+                    <button  id="login" class="buttonAnimation1">Login</button>
+                    <button  id="register" class="buttonAnimation2">Register</button>
+                 </section>
+            <form action="index.html" method="get">
+                <span>
+                    <input type="text" name="username" id="username" placeholder="Enter your username" required>
+                    <input  type="checkbox" name="checkbox" style="visibility:hidden;margin:0;">
+                </span>
+                <span>
+                    <input id="psw0"type="password" name="password" placeholder="Enter your password" required>
+                    <input onClick="visible(event)" type="checkbox" id="szem1" ><label for="szem1"></label>
+                </span>
+                <span>
+                    <input id="psw1"type="password" name="passwordcheck " placeholder="Enter your password again" required>
+                    <input onClick="visible(event)" type="checkbox" id="szem2"><label for="szem2"></label>
+                </span>
+                <span>
+                    <input type="checkbox" name="checkbox" id="belepes">
+                    <label for="belepes">Stay login</label>
+                </span>
+                <input type="submit" name="submit" value="Send"><label for="submit"></label>
+            </form>
+            <span id="container1"><input type="checkbox" name="agree" id="condcheck"><label for="agree">Agree to the Terms and Conditions.</label></span>
+            <p id="terms"style="display:none;color:red;">Agree to Terms and Conditions!</p>
+            <p>or connect with social media</p>
+            <section id="socialmedia">
+                <a href="https://www.facebook.com/"><img src="fb.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="insta.svg" alt="instagram"></a>
+                <a href="https://twitter.com/"><img src="twitter.svg" alt="twitter"></a>
+            </section>
+            </div>
+        </div>
+    </div>
+    
+    
+   <!-- <p id ="alert"style="position:absolute;top:50%;left:50%;">probaaaaaaaa</p>--->
+    
+   <script src="main.js" defer></script> 
+</body>
+</html>
